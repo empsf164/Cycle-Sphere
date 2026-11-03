@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Detailed engineering specifications, geometry diagrams, and configuration options for Cycle Sphere performance bicycles." />
+  <title>Bicycle Specifications &amp; Details | CYCLE SPHERE</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="topbar" aria-label="Announcement">
+    <div class="container topbar-inner">
+      <div class="topbar-msg">
+        <span class="topbar-pill">Complimentary Freight</span>
+        <span>Free white-glove boxed delivery on all complete bicycles worldwide.</span>
+      </div>
+      <div class="topbar-links">
+        <a href="size-guide.html">Interactive Size Calculator</a>
+        <a href="about-contact.html#faq">Rider Support & FAQs</a>
+        <a href="about-contact.html#contact">Live Concierge</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Mandatory Sticky Header & Navbar -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Cycle Sphere Home">
+          <div class="brand-logo-mark">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18.5" cy="17.5" r="3.5"/>
+              <circle cx="5.5" cy="17.5" r="3.5"/>
+              <circle cx="15" cy="5" r="1"/>
+              <path d="M12 17.5V14l-3-3 4-3 2 3h2"/>
+            </svg>
+          </div>
+          <span>CYCLE<span class="accent">SPHERE</span></span>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+
+          <!-- Bikes Dropdown -->
+          <li class="nav-item is-active">
+            <a href="shop.html" class="nav-link" aria-haspopup="true">
+              Bikes
+              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="shop.html" class="dropdown-link"><span>All Bikes</span></a>
+              <a href="shop.html?cat=road" class="dropdown-link">
+                <span>Road Bikes</span>
+                <span class="dropdown-link-badge">Aero</span>
+              </a>
+              <a href="shop.html?cat=mountain" class="dropdown-link">
+                <span>Mountain Bikes</span>
+                <span class="dropdown-link-badge">Enduro</span>
+              </a>
+              <a href="shop.html?cat=city" class="dropdown-link"><span>City Bikes</span></a>
+              <a href="shop.html?filter=bestseller" class="dropdown-link"><span>Best Sellers</span></a>
+              <a href="shop.html?filter=new" class="dropdown-link"><span>New Arrivals</span></a>
+            </div>
+          </li>
+
+          <!-- Accessories Dropdown -->
+          <li class="nav-item">
+            <a href="shop.html?cat=accessories" class="nav-link" aria-haspopup="true">
+              Accessories
+              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="shop.html?cat=accessories&sub=helmets" class="dropdown-link">Helmets</a>
+              <a href="shop.html?cat=accessories&sub=apparel" class="dropdown-link">Cycling Apparel</a>
+              <a href="shop.html?cat=accessories&sub=lights" class="dropdown-link">Lights & Safety</a>
+              <a href="shop.html?cat=accessories&sub=locks" class="dropdown-link">Locks & Security</a>
+              <a href="shop.html?cat=accessories&sub=tools" class="dropdown-link">Pumps & Tools</a>
+              <a href="shop.html?cat=accessories&sub=hydration" class="dropdown-link">Bottles & Hydration</a>
+              <a href="shop.html?cat=accessories" class="dropdown-link">All Accessories</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="shop.html?filter=collections" class="nav-link">Collections</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="size-guide.html" class="nav-link">Size Guide</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about-contact.html#about" class="nav-link">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about-contact.html#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right-Side Action Controls -->
+        <div class="header-actions">
+          <button type="button" class="header-action-btn open-search-trigger" aria-label="Open search dialog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+
+          <a href="shop.html?filter=wishlist" class="header-action-btn" aria-label="View saved bikes wishlist">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <span class="action-count-badge wishlist-count-badge" style="display: none;">0</span>
+          </a>
+
+          <a href="cart.html" class="header-action-btn" aria-label="View shopping cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <span class="action-count-badge cart-count-badge" style="display: none;">0</span>
+          </a>
+
+          <button type="button" class="header-action-btn theme-toggle-btn" aria-label="Toggle light and dark mode">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+
+          <div class="header-auth-links">
+            <a href="login.html" class="header-auth-link">Login</a>
+            <a href="signup.html" class="header-auth-link">Sign Up</a>
+          </div>
+
+          <a href="shop.html" class="btn btn-primary header-cta-btn">Shop Bikes</a>
+
+          <button type="button" class="hamburger-btn" aria-label="Open mobile navigation menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" aria-hidden="true">
+    <div class="mobile-drawer">
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-logo-mark">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+          </div>
+          <span>CYCLE<span class="accent">SPHERE</span></span>
+        </a>
+        <button type="button" class="cs-modal-close mobile-drawer-close" aria-label="Close menu">&times;</button>
+      </div>
+
+      <div class="mobile-drawer-body">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+          <li>
+            <button type="button" class="mobile-nav-link mobile-accordion-toggle" data-accordion-target="mob-pdp-bikes">
+              <span>Bicycles</span>
+              <svg class="nav-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="mobile-accordion-content" id="mob-pdp-bikes">
+              <a href="shop.html" class="mobile-sub-link">All Bikes</a>
+              <a href="shop.html?cat=road" class="mobile-sub-link">Road Bikes</a>
+              <a href="shop.html?cat=mountain" class="mobile-sub-link">Mountain Bikes</a>
+              <a href="shop.html?cat=city" class="mobile-sub-link">City Bikes</a>
+              <a href="shop.html?filter=bestseller" class="mobile-sub-link">Best Sellers</a>
+              <a href="shop.html?filter=new" class="mobile-sub-link">New Arrivals</a>
+            </div>
+          </li>
+          <li>
+            <button type="button" class="mobile-nav-link mobile-accordion-toggle" data-accordion-target="mob-pdp-accessories">
+              <span>Accessories</span>
+              <svg class="nav-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="mobile-accordion-content" id="mob-pdp-accessories">
+              <a href="shop.html?cat=accessories&sub=helmets" class="mobile-sub-link">Helmets</a>
+              <a href="shop.html?cat=accessories&sub=apparel" class="mobile-sub-link">Cycling Apparel</a>
+              <a href="shop.html?cat=accessories&sub=lights" class="mobile-sub-link">Lights & Safety</a>
+              <a href="shop.html?cat=accessories&sub=locks" class="mobile-sub-link">Locks & Security</a>
+              <a href="shop.html?cat=accessories&sub=tools" class="mobile-sub-link">Pumps & Tools</a>
+              <a href="shop.html?cat=accessories&sub=hydration" class="mobile-sub-link">Bottles & Hydration</a>
+              <a href="shop.html?cat=accessories" class="mobile-sub-link">All Accessories</a>
+            </div>
+          </li>
+          <li><a href="shop.html?filter=collections" class="mobile-nav-link">Collections</a></li>
+          <li><a href="size-guide.html" class="mobile-nav-link">Size Guide</a></li>
+          <li><a href="about-contact.html#about" class="mobile-nav-link">About Cycle Sphere</a></li>
+          <li><a href="about-contact.html#contact" class="mobile-nav-link">Contact & Support</a></li>
+        </ul>
+      </div>
+
+      <div class="mobile-drawer-footer">
+        <a href="shop.html" class="btn btn-primary" style="width: 100%;">Shop Bikes</a>
+        <div style="display: flex; gap: 0.5rem;">
+          <a href="login.html" class="btn btn-outline" style="flex: 1;">Login</a>
+          <a href="signup.html" class="btn btn-secondary" style="flex: 1;">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="section-sm">
+    <div class="container">
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <a href="shop.html">Shop Fleet</a>
+        <span class="sep">/</span>
+        <a href="shop.html" id="pdp-crumb-cat">Road Bikes</a>
+        <span class="sep">/</span>
+        <span class="current" id="pdp-crumb-title">Aero Strada Pro Carbon</span>
+      </nav>
+
+      <!-- PRODUCT BUY BOX TOP GRID -->
+      <div class="product-details-grid">
+        <!-- Left: Image Gallery -->
+        <div class="product-gallery">
+          <div class="product-gallery-main">
+            <img id="pdp-main-image" src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1200&q=80" alt="Bicycle full profile" />
+          </div>
+          <div class="product-gallery-thumbs" id="pdp-gallery-thumbs">
+            <!-- Dynamically populated thumbnails -->
+          </div>
+        </div>
+
+        <!-- Right: Buy Box & Options -->
+        <div class="product-buy-box">
+          <div class="pdp-category-row">
+            <span class="product-category-tag" id="pdp-category-badge">Road Bikes</span>
+            <span class="product-badge badge-sale" id="pdp-promo-badge">SALE</span>
+          </div>
+
+          <h1 class="pdp-title" id="pdp-title">Aero Strada Pro Carbon</h1>
+
+          <div class="pdp-meta-row">
+            <div id="pdp-rating-wrap" style="display: flex; align-items: center; gap: 0.4rem;"></div>
+            <span class="product-stock-status in-stock" id="pdp-stock-count">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              In Stock &amp; Ready to Ship
+            </span>
+          </div>
+
+          <div class="pdp-price-row">
+            <span class="pdp-price" id="pdp-price">$4,399</span>
+            <span class="pdp-original-price" id="pdp-original-price">$4,899</span>
+          </div>
+
+          <p class="pdp-description" id="pdp-description">
+            Ultra-aerodynamic wind-tunnel engineered road bike with electronic shifting and hydraulic disc braking for uncompromising speed.
+          </p>
+
+          <!-- Config Options Card -->
+          <div class="pdp-options-card">
+            <!-- Size Selector -->
+            <div style="margin-bottom: 1.25rem;">
+              <div class="pdp-size-header">
+                <label class="form-label" style="margin-bottom: 0;">
+                  Selected Frame Size: <span class="text-accent-weight" id="pdp-selected-size-label">M (54cm)</span>
+                </label>
+                <a href="size-guide.html" class="size-guide-modal-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                  Interactive Sizing Guide
+                </a>
+              </div>
+              <div class="pdp-size-selector" id="pdp-size-selector">
+                <!-- Dynamically populated sizes -->
+              </div>
+            </div>
+
+            <!-- Color Swatches -->
+            <div>
+              <label class="form-label">
+                Colorway / Finish: <span class="text-accent-weight" id="pdp-selected-color-label">Forest Racing Green</span>
+              </label>
+              <div class="pdp-color-swatches" id="pdp-color-selector">
+                <!-- Dynamically populated swatches -->
+              </div>
+            </div>
+
+            <!-- Stepper, Add to Cart & Buy Now -->
+            <div class="pdp-purchase-actions">
+              <div class="quantity-stepper">
+                <button type="button" class="qty-btn" id="pdp-qty-minus" aria-label="Decrease quantity">-</button>
+                <input type="number" id="pdp-qty-input" value="1" min="1" max="10" readonly />
+                <button type="button" class="qty-btn" id="pdp-qty-plus" aria-label="Increase quantity">+</button>
+              </div>
+
+              <button type="button" class="btn btn-primary btn-lg btn-pdp-cart" id="pdp-add-cart-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                Add to Cart
+              </button>
+
+              <button type="button" class="btn btn-accent btn-lg btn-pdp-buy-now" id="pdp-buy-now-btn">
+                Buy Now
+              </button>
+
+              <button type="button" class="btn-wishlist" id="pdp-wishlist-btn" aria-label="Save to Wishlist" style="width: 48px; height: 48px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- White-Glove Delivery Info Card -->
+          <div class="pdp-delivery-box">
+            <div class="delivery-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--primary);"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              <span><strong>Complimentary Flight Crate Delivery:</strong> Ships within 24-48 business hours with live GPS courier tracking.</span>
+            </div>
+            <div class="delivery-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--primary);"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              <span><strong>95% Pre-Calibrated:</strong> Hand-tuned by master bike mechanics. Insert handlebar, attach front wheel and pedals with included torque wrench.</span>
+            </div>
+            <div class="delivery-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--primary);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span><strong>Guaranteed Protection:</strong> Lifetime frameset warranty plus 30-day trail trial policy.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT TABS (Specifications, Features, Geometry, Reviews) -->
+      <section class="pdp-tabs-container">
+        <div class="pdp-tab-headers" role="tablist">
+          <button type="button" class="pdp-tab-btn is-active" data-tab-target="tab-specs" role="tab">
+            Technical Specifications
+          </button>
+          <button type="button" class="pdp-tab-btn" data-tab-target="tab-features" role="tab">
+            Key Features &amp; Engineering
+          </button>
+          <button type="button" class="pdp-tab-btn" data-tab-target="tab-geometry" role="tab">
+            Frame Fit &amp; Geometry
+          </button>
+          <button type="button" class="pdp-tab-btn" data-tab-target="tab-reviews" id="pdp-reviews-tab" role="tab">
+            Rider Reviews
+          </button>
+        </div>
+
+        <!-- Tab 1: Structured Technical Specifications Table -->
+        <div class="pdp-tab-panel is-active" id="tab-specs" role="tabpanel">
+          <div style="margin-bottom: 1.5rem;">
+            <p style="font-size: 0.9rem; color: var(--text-muted); font-style: italic;">
+              * Note: Demo engineering specifications provided for commercial preview. Component batches subject to precision continuous refinement.
+            </p>
+          </div>
+          <table class="specs-table" aria-label="Bicycle Specifications Table">
+            <tbody id="pdp-specs-table-body">
+              <!-- Rendered by product-details.js -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Tab 2: Key Features -->
+        <div class="pdp-tab-panel" id="tab-features" role="tabpanel">
+          <div style="max-width: 800px;">
+            <h3 style="font-size: 1.4rem; margin-bottom: 1.25rem;">Aerodynamic Wind Tunnel &amp; Layup Breakthroughs</h3>
+            <ul id="pdp-key-features-list" style="list-style: none; padding: 0; margin-bottom: 2rem;">
+              <!-- Key features bullets -->
+            </ul>
+            <p style="color: var(--text-secondary); line-height: 1.7;">
+              Cycle Sphere engineers utilize finite element analysis (FEA) to orchestrate carbon tow alignment across high-stress junctions: bottom brackets, headtubes, and chainstays. This delivers instantaneous acceleration without sacrificing vertical compliance for grueling all-day centuries.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tab 3: Fit & Geometry -->
+        <div class="pdp-tab-panel" id="tab-geometry" role="tabpanel">
+          <div class="geometry-diagram-grid">
+            <div>
+              <h3 style="font-size: 1.4rem; margin-bottom: 1rem;">Dialing in Your Cockpit</h3>
+              <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+                Frame geometry dictates handling character, center of gravity, and aerodynamic torso angle. A proper reach and stack dimension guarantees optimal diaphragm expansion and pedal stroke efficiency.
+              </p>
+              <div style="background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1.5rem;">
+                <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">Quick Sizing Reference</h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                  <strong>Small (51cm):</strong> 5'4" &ndash; 5'7" (162 &ndash; 170cm)<br />
+                  <strong>Medium (54cm):</strong> 5'7" &ndash; 5'10" (170 &ndash; 178cm)<br />
+                  <strong>Large (56cm):</strong> 5'10" &ndash; 6'1" (178 &ndash; 186cm)<br />
+                  <strong>X-Large (58cm):</strong> 6'1" &ndash; 6'4" (186 &ndash; 193cm)
+                </p>
+                <a href="size-guide.html" class="btn btn-outline btn-sm">Open Comprehensive Size Guide &rarr;</a>
+              </div>
+            </div>
+            <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; text-align: center;">
+              <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" style="margin: 0 auto 1rem; color: var(--primary);">
+                <circle cx="5" cy="18" r="3.5"/>
+                <circle cx="19" cy="18" r="3.5"/>
+                <circle cx="14" cy="5" r="1.5"/>
+                <path d="M11 18l3-8 3 8"/>
+                <path d="M5 18l4-8 5 0"/>
+                <path d="M14 5l-2 5"/>
+              </svg>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Precision Frame Alignment</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Calibrated laser geometry verified prior to shipment</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Verified Reviews -->
+        <div class="pdp-tab-panel" id="tab-reviews" role="tabpanel">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+            <!-- Existing Reviews List -->
+            <div>
+              <h3 style="font-size: 1.35rem; margin-bottom: 1.5rem;">Verified Owner Feedback</h3>
+              <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+                <div style="background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem;">
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <strong>Damian Thorne &bull; Verified Owner</strong>
+                    <div class="product-rating">★★★★★</div>
+                  </div>
+                  <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.5;">
+                    “The stiffness-to-weight ratio is startling. When sprinting out of the saddle on punchy climbs, zero flex in the bottom bracket shell. Easily the best road investment I've made.”
+                  </p>
+                </div>
+
+                <div style="background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem;">
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <strong>Chloe Zhang &bull; Verified Owner</strong>
+                    <div class="product-rating">★★★★★</div>
+                  </div>
+                  <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.5;">
+                    “White-glove unboxing was seamless. Shipped with all torque bits and grease. Rode 65 miles the next day with zero adjustments needed.”
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Write a Review Form -->
+            <div style="background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 2rem;">
+              <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Leave a Rider Review</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+                Share your journey feedback with our global community.
+              </p>
+              <form id="pdp-review-form">
+                <div class="form-group">
+                  <label class="form-label" for="review-rating">Overall Rating</label>
+                  <select class="form-select" id="review-rating" required>
+                    <option value="5">5 Stars — Flawless Performance</option>
+                    <option value="4">4 Stars — Great Machine</option>
+                    <option value="3">3 Stars — Average</option>
+                    <option value="2">2 Stars — Needs Improvement</option>
+                    <option value="1">1 Star — Unsatisfied</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="review-name">Your Full Name</label>
+                  <input type="text" class="form-input" id="review-name" placeholder="e.g. Alex Morgan" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="review-text">Review Comments</label>
+                  <textarea class="form-textarea" id="review-text" rows="4" placeholder="How does the frame respond on your local terrain?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Review</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RELATED ACCESSORIES SECTION -->
+      <section class="section-sm" style="margin-top: 4rem; border-top: 1px solid var(--border-color);">
+        <div class="section-header" style="display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="section-tag">Complementary Gear</span>
+            <h2 class="section-title">Related Cycling Accessories</h2>
+          </div>
+          <a href="shop.html?cat=accessories" class="btn btn-outline">Browse All Gear &rarr;</a>
+        </div>
+        <div class="product-grid" id="pdp-related-accessories-grid">
+          <!-- Dynamically populated -->
+        </div>
+      </section>
+
+      <!-- RECOMMENDED BICYCLES -->
+      <section class="section-sm" style="border-top: 1px solid var(--border-color);">
+        <div class="section-header" style="display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="section-tag">Explore More Flagships</span>
+            <h2 class="section-title">You May Also Admire</h2>
+          </div>
+          <a href="shop.html" class="btn btn-outline">Explore Complete Fleet &rarr;</a>
+        </div>
+        <div class="product-grid" id="pdp-related-bikes-grid">
+          <!-- Dynamically populated -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- MANDATORY 4-COLUMN FOOTER & NEWSLETTER -->
+  <footer class="site-footer">
+    <div class="footer-newsletter-strip">
+      <div class="container">
+        <div class="newsletter-box">
+          <div class="newsletter-content">
+            <h3 class="newsletter-title">Join The Peloton</h3>
+            <p class="newsletter-subtitle">
+              Receive route guides, early product drops, and exclusive invitations to Cycle Sphere group rides. Enjoy 10% off your first accessories order.
+            </p>
+          </div>
+          <form class="newsletter-form" aria-label="Newsletter Subscription">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address" required />
+            <button type="submit" class="btn btn-accent">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col-brand">
+            <a href="index.html" class="brand-logo" style="color: #FFFFFF;">
+              <div class="brand-logo-mark">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+              </div>
+              <span>CYCLE<span class="accent">SPHERE</span></span>
+            </a>
+            <p>
+              “Find Your Ride. Define Your Journey.” Premium performance bicycles and cycling essentials engineered for competitive athletes, adventurers, and everyday commuters.
+            </p>
+            <div class="footer-social-links">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+              </a>
+              <a href="https://strava.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Strava">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7.008 13.827h4.172"/></svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Twitter">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Shop Collection</h4>
+            <ul class="footer-links-list">
+              <li><a href="shop.html?cat=road">Road Bikes</a></li>
+              <li><a href="shop.html?cat=mountain">Mountain Bikes</a></li>
+              <li><a href="shop.html?cat=city">City Commuters</a></li>
+              <li><a href="shop.html?cat=accessories">Bicycle Accessories</a></li>
+              <li><a href="shop.html?filter=bestseller">Best Sellers</a></li>
+              <li><a href="shop.html?filter=new">New Arrivals</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Customer Support</h4>
+            <ul class="footer-links-list">
+              <li><a href="about-contact.html#contact">Contact Concierge</a></li>
+              <li><a href="about-contact.html#faq">Frequently Asked Questions</a></li>
+              <li><a href="about-contact.html#shipping">Shipping &amp; Boxed Delivery</a></li>
+              <li><a href="about-contact.html#returns">30-Day Trail Returns</a></li>
+              <li><a href="about-contact.html#warranty">Lifetime Frame Warranty</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Information</h4>
+            <ul class="footer-links-list">
+              <li><a href="about-contact.html#about">About Cycle Sphere</a></li>
+              <li><a href="size-guide.html">Bicycle Size &amp; Fit Guide</a></li>
+              <li><a href="about-contact.html#privacy">Privacy Policy</a></li>
+              <li><a href="about-contact.html#terms">Terms &amp; Conditions</a></li>
+              <li><a href="404.html">404 Error Page Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>
+          &copy; 2026 CYCLE SPHERE. All Rights Reserved. Commercial E-Commerce HTML Template. Demo Product Data.
+        </div>
+        <div class="footer-payment-badges">
+          <span class="payment-pill">VISA</span>
+          <span class="payment-pill">MASTERCARD</span>
+          <span class="payment-pill">AMEX</span>
+          <span class="payment-pill">APPLE PAY</span>
+          <span class="payment-pill">PAYPAL</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/product-details.js"></script>
+</body>
+</html>
+

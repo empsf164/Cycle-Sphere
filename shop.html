@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover Cycle Sphere's complete bicycle fleet and cycling equipment. Filter by discipline, carbon layup, wheel size, and price." />
+  <title>Bicycle Discovery &amp; Gear Shop | CYCLE SPHERE</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="topbar" aria-label="Announcement">
+    <div class="container topbar-inner">
+      <div class="topbar-msg">
+        <span class="topbar-pill">Complimentary Freight</span>
+        <span>Free white-glove boxed delivery on all complete bicycles worldwide.</span>
+      </div>
+      <div class="topbar-links">
+        <a href="size-guide.html">Interactive Size Calculator</a>
+        <a href="about-contact.html#faq">Rider Support & FAQs</a>
+        <a href="about-contact.html#contact">Live Concierge</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Mandatory Sticky Header & Navbar -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Cycle Sphere Home">
+          <div class="brand-logo-mark">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18.5" cy="17.5" r="3.5"/>
+              <circle cx="5.5" cy="17.5" r="3.5"/>
+              <circle cx="15" cy="5" r="1"/>
+              <path d="M12 17.5V14l-3-3 4-3 2 3h2"/>
+            </svg>
+          </div>
+          <span>CYCLE<span class="accent">SPHERE</span></span>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+
+          <!-- Bikes Dropdown -->
+          <li class="nav-item is-active">
+            <a href="shop.html" class="nav-link" aria-haspopup="true">
+              Bikes
+              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="shop.html" class="dropdown-link">
+                <span>All Bikes</span>
+              </a>
+              <a href="shop.html?cat=road" class="dropdown-link">
+                <span>Road Bikes</span>
+                <span class="dropdown-link-badge">Aero</span>
+              </a>
+              <a href="shop.html?cat=mountain" class="dropdown-link">
+                <span>Mountain Bikes</span>
+                <span class="dropdown-link-badge">Enduro</span>
+              </a>
+              <a href="shop.html?cat=city" class="dropdown-link">
+                <span>City Bikes</span>
+              </a>
+              <a href="shop.html?filter=bestseller" class="dropdown-link">
+                <span>Best Sellers</span>
+              </a>
+              <a href="shop.html?filter=new" class="dropdown-link">
+                <span>New Arrivals</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- Accessories Dropdown -->
+          <li class="nav-item">
+            <a href="shop.html?cat=accessories" class="nav-link" aria-haspopup="true">
+              Accessories
+              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="shop.html?cat=accessories&sub=helmets" class="dropdown-link">Helmets</a>
+              <a href="shop.html?cat=accessories&sub=apparel" class="dropdown-link">Cycling Apparel</a>
+              <a href="shop.html?cat=accessories&sub=lights" class="dropdown-link">Lights & Safety</a>
+              <a href="shop.html?cat=accessories&sub=locks" class="dropdown-link">Locks & Security</a>
+              <a href="shop.html?cat=accessories&sub=tools" class="dropdown-link">Pumps & Tools</a>
+              <a href="shop.html?cat=accessories&sub=hydration" class="dropdown-link">Bottles & Hydration</a>
+              <a href="shop.html?cat=accessories" class="dropdown-link">All Accessories</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="shop.html?filter=collections" class="nav-link">Collections</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="size-guide.html" class="nav-link">Size Guide</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about-contact.html#about" class="nav-link">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about-contact.html#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right-Side Action Controls -->
+        <div class="header-actions">
+          <button type="button" class="header-action-btn open-search-trigger" aria-label="Open search dialog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+
+          <a href="shop.html?filter=wishlist" class="header-action-btn" aria-label="View saved bikes wishlist">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <span class="action-count-badge wishlist-count-badge" style="display: none;">0</span>
+          </a>
+
+          <a href="cart.html" class="header-action-btn" aria-label="View shopping cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <span class="action-count-badge cart-count-badge" style="display: none;">0</span>
+          </a>
+
+          <button type="button" class="header-action-btn theme-toggle-btn" aria-label="Toggle light and dark mode">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+
+          <div class="header-auth-links">
+            <a href="login.html" class="header-auth-link">Login</a>
+            <a href="signup.html" class="header-auth-link">Sign Up</a>
+          </div>
+
+          <a href="shop.html" class="btn btn-primary header-cta-btn">Shop Bikes</a>
+
+          <button type="button" class="hamburger-btn" aria-label="Open mobile navigation menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Off-Canvas Drawer -->
+  <div class="mobile-drawer-backdrop" aria-hidden="true">
+    <div class="mobile-drawer">
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-logo-mark">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+          </div>
+          <span>CYCLE<span class="accent">SPHERE</span></span>
+        </a>
+        <button type="button" class="cs-modal-close mobile-drawer-close" aria-label="Close menu">&times;</button>
+      </div>
+
+      <div class="mobile-drawer-body">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+          <li>
+            <button type="button" class="mobile-nav-link mobile-accordion-toggle" data-accordion-target="mob-shop-bikes">
+              <span>Bicycles</span>
+              <svg class="nav-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="mobile-accordion-content" id="mob-shop-bikes">
+              <a href="shop.html" class="mobile-sub-link">All Bikes</a>
+              <a href="shop.html?cat=road" class="mobile-sub-link">Road Bikes</a>
+              <a href="shop.html?cat=mountain" class="mobile-sub-link">Mountain Bikes</a>
+              <a href="shop.html?cat=city" class="mobile-sub-link">City Bikes</a>
+              <a href="shop.html?filter=bestseller" class="mobile-sub-link">Best Sellers</a>
+              <a href="shop.html?filter=new" class="mobile-sub-link">New Arrivals</a>
+            </div>
+          </li>
+          <li>
+            <button type="button" class="mobile-nav-link mobile-accordion-toggle" data-accordion-target="mob-shop-accessories">
+              <span>Accessories</span>
+              <svg class="nav-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="mobile-accordion-content" id="mob-shop-accessories">
+              <a href="shop.html?cat=accessories&sub=helmets" class="mobile-sub-link">Helmets</a>
+              <a href="shop.html?cat=accessories&sub=apparel" class="mobile-sub-link">Cycling Apparel</a>
+              <a href="shop.html?cat=accessories&sub=lights" class="mobile-sub-link">Lights & Safety</a>
+              <a href="shop.html?cat=accessories&sub=locks" class="mobile-sub-link">Locks & Security</a>
+              <a href="shop.html?cat=accessories&sub=tools" class="mobile-sub-link">Pumps & Tools</a>
+              <a href="shop.html?cat=accessories&sub=hydration" class="mobile-sub-link">Bottles & Hydration</a>
+              <a href="shop.html?cat=accessories" class="mobile-sub-link">All Accessories</a>
+            </div>
+          </li>
+          <li><a href="shop.html?filter=collections" class="mobile-nav-link">Collections</a></li>
+          <li><a href="size-guide.html" class="mobile-nav-link">Size Guide</a></li>
+          <li><a href="about-contact.html#about" class="mobile-nav-link">About Cycle Sphere</a></li>
+          <li><a href="about-contact.html#contact" class="mobile-nav-link">Contact & Support</a></li>
+        </ul>
+      </div>
+
+      <div class="mobile-drawer-footer">
+        <a href="shop.html" class="btn btn-primary" style="width: 100%;">Shop Bikes</a>
+        <div style="display: flex; gap: 0.5rem;">
+          <a href="login.html" class="btn btn-outline" style="flex: 1;">Login</a>
+          <a href="signup.html" class="btn btn-secondary" style="flex: 1;">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="section-sm">
+    <div class="container">
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <span class="current">Bicycle Atelier &amp; Gear</span>
+      </nav>
+
+      <!-- Shop Banner Header -->
+      <div style="margin-bottom: 2rem;">
+        <h1 style="font-size: clamp(2rem, 3.5vw, 2.75rem); margin-bottom: 0.5rem;">Bicycle Fleet &amp; Cycling Essentials</h1>
+        <p style="font-size: 1.05rem; max-width: 720px; color: var(--text-secondary);">
+          Engineered frames, precision groupsets, and tour-proven components. Refine your search by discipline, frame material, or wheel diameter.
+        </p>
+      </div>
+
+      <!-- Mobile Filter Trigger -->
+      <div style="margin-bottom: 1.25rem;">
+        <button type="button" class="btn btn-outline mobile-filter-trigger" id="mobile-filter-trigger" style="width: 100%;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+          Filters &amp; Refinements
+        </button>
+      </div>
+
+      <!-- Backdrop for mobile filter drawer -->
+      <div class="shop-sidebar-backdrop" id="shop-sidebar-backdrop"></div>
+
+      <!-- Main Shop Layout -->
+      <div class="shop-layout">
+        <!-- FILTER SIDEBAR -->
+        <aside class="shop-sidebar" id="shop-sidebar" aria-label="Shop Filters">
+          <div class="sidebar-header">
+            <h3 class="sidebar-title">Filters</h3>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <button type="button" class="btn btn-ghost btn-sm" id="clear-all-filters-btn" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">Reset</button>
+              <button type="button" class="cs-modal-close" id="close-sidebar-btn" aria-label="Close sidebar" style="position: static; display: none;">&times;</button>
+            </div>
+          </div>
+
+          <!-- 1. Category Filter -->
+          <div class="filter-group">
+            <div class="filter-title">Discipline &amp; Category</div>
+            <div class="filter-options-list">
+              <label class="filter-checkbox-item">
+                <span>
+                  <input type="radio" name="filter-cat" value="all" checked /> All Products
+                </span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span>
+                  <input type="radio" name="filter-cat" value="road" /> Road Bikes
+                </span>
+                <span class="filter-count">4</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span>
+                  <input type="radio" name="filter-cat" value="mountain" /> Mountain Bikes
+                </span>
+                <span class="filter-count">3</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span>
+                  <input type="radio" name="filter-cat" value="city" /> City Commuters
+                </span>
+                <span class="filter-count">3</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span>
+                  <input type="radio" name="filter-cat" value="accessories" /> Accessories &amp; Gear
+                </span>
+                <span class="filter-count">6</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- 2. Price Range -->
+          <div class="filter-group">
+            <div class="filter-title">Price Range ($)</div>
+            <div class="price-range-inputs">
+              <input type="number" id="price-min" placeholder="Min" min="0" />
+              <span style="color: var(--text-muted);">&ndash;</span>
+              <input type="number" id="price-max" placeholder="Max" min="0" />
+              <button type="button" class="btn btn-secondary btn-sm" id="apply-price-btn" style="padding: 0.45rem 0.8rem;">Go</button>
+            </div>
+          </div>
+
+          <!-- 3. Brand Filter -->
+          <div class="filter-group">
+            <div class="filter-title">Brand &amp; Atelier</div>
+            <div class="filter-options-list">
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-brand" value="Strada Racing" /> Strada Racing</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-brand" value="Apex Offroad" /> Apex Offroad</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-brand" value="Cycle Sphere Atelier" /> Cycle Sphere Atelier</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-brand" value="Horizon Adventure" /> Horizon Adventure</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-brand" value="Cycle Sphere Essentials" /> Essentials</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-brand" value="Cycle Sphere Apparel" /> Apparel</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- 4. Frame Material Filter -->
+          <div class="filter-group">
+            <div class="filter-title">Frame Material</div>
+            <div class="filter-options-list">
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-material" value="Carbon" /> Monocoque Carbon</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-material" value="Aluminum" /> Hydroformed Alloy</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-material" value="Chromoly" /> 4130 Chromoly Steel</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- 5. Bike Frame Size -->
+          <div class="filter-group">
+            <div class="filter-title">Frame Size</div>
+            <div class="filter-options-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-size" value="XS" /> XS</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-size" value="S" /> S</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-size" value="M" /> M</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-size" value="L" /> L</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-size" value="XL" /> XL</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- 6. Wheel Size -->
+          <div class="filter-group">
+            <div class="filter-title">Wheel Size</div>
+            <div class="filter-options-list">
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-wheel" value="700c" /> 700c Road / Commuter</span>
+              </label>
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" name="filter-wheel" value="29&quot;" /> 29" Mountain / Trail</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- 7. In Stock Filter -->
+          <div class="filter-group">
+            <div class="filter-title">Availability</div>
+            <label class="filter-checkbox-item">
+              <span><input type="checkbox" id="filter-instock" /> In Stock &amp; Ready to Ship</span>
+            </label>
+          </div>
+        </aside>
+
+        <!-- PRODUCT LISTINGS AREA -->
+        <section class="shop-content-area" aria-label="Product Listings">
+          <!-- Control bar -->
+          <div class="shop-content-header">
+            <div class="shop-result-count" id="shop-result-count">
+              Loading fleet products...
+            </div>
+
+            <div class="shop-controls">
+              <!-- Sort Select -->
+              <div class="sort-select-wrap">
+                <label for="sort-by-select">Sort by:</label>
+                <select id="sort-by-select" class="sort-select">
+                  <option value="featured">Featured &amp; Flagship</option>
+                  <option value="newest">Newest Releases</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="rating">Best Customer Rating</option>
+                </select>
+              </div>
+
+              <!-- Grid / List Switcher -->
+              <div class="view-toggle-btns" aria-label="View toggle">
+                <button type="button" class="view-toggle-btn is-active" id="view-grid-btn" aria-label="Grid view">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                </button>
+                <button type="button" class="view-toggle-btn" id="view-list-btn" aria-label="List view">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Active Filter Chips -->
+          <div class="active-filter-chips" id="active-filter-chips" style="display: none;"></div>
+
+          <!-- Products Grid -->
+          <div class="product-grid" id="shop-products-grid">
+            <!-- Rendered by shop.js -->
+          </div>
+
+          <!-- Load More / Pagination -->
+          <div id="load-more-wrap" style="display: flex; justify-content: center; margin-top: 3.5rem;">
+            <button type="button" class="btn btn-outline btn-lg" id="load-more-btn">
+              Load More Bicycles &amp; Gear
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- MANDATORY 4-COLUMN FOOTER & NEWSLETTER -->
+  <footer class="site-footer">
+    <div class="footer-newsletter-strip">
+      <div class="container">
+        <div class="newsletter-box">
+          <div class="newsletter-content">
+            <h3 class="newsletter-title">Join The Peloton</h3>
+            <p class="newsletter-subtitle">
+              Receive route guides, early product drops, and exclusive invitations to Cycle Sphere group rides. Enjoy 10% off your first accessories order.
+            </p>
+          </div>
+          <form class="newsletter-form" aria-label="Newsletter Subscription">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address" required />
+            <button type="submit" class="btn btn-accent">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col-brand">
+            <a href="index.html" class="brand-logo" style="color: #FFFFFF;">
+              <div class="brand-logo-mark">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+              </div>
+              <span>CYCLE<span class="accent">SPHERE</span></span>
+            </a>
+            <p>
+              “Find Your Ride. Define Your Journey.” Premium performance bicycles and cycling essentials engineered for competitive athletes, adventurers, and everyday commuters.
+            </p>
+            <div class="footer-social-links">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+              </a>
+              <a href="https://strava.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Strava">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7.008 13.827h4.172"/></svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Twitter">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Shop Collection</h4>
+            <ul class="footer-links-list">
+              <li><a href="shop.html?cat=road">Road Bikes</a></li>
+              <li><a href="shop.html?cat=mountain">Mountain Bikes</a></li>
+              <li><a href="shop.html?cat=city">City Commuters</a></li>
+              <li><a href="shop.html?cat=accessories">Bicycle Accessories</a></li>
+              <li><a href="shop.html?filter=bestseller">Best Sellers</a></li>
+              <li><a href="shop.html?filter=new">New Arrivals</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Customer Support</h4>
+            <ul class="footer-links-list">
+              <li><a href="about-contact.html#contact">Contact Concierge</a></li>
+              <li><a href="about-contact.html#faq">Frequently Asked Questions</a></li>
+              <li><a href="about-contact.html#shipping">Shipping &amp; Boxed Delivery</a></li>
+              <li><a href="about-contact.html#returns">30-Day Trail Returns</a></li>
+              <li><a href="about-contact.html#warranty">Lifetime Frame Warranty</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Information</h4>
+            <ul class="footer-links-list">
+              <li><a href="about-contact.html#about">About Cycle Sphere</a></li>
+              <li><a href="size-guide.html">Bicycle Size &amp; Fit Guide</a></li>
+              <li><a href="about-contact.html#privacy">Privacy Policy</a></li>
+              <li><a href="about-contact.html#terms">Terms &amp; Conditions</a></li>
+              <li><a href="404.html">404 Error Page Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>
+          &copy; 2026 CYCLE SPHERE. All Rights Reserved. Commercial E-Commerce HTML Template. Demo Product Data.
+        </div>
+        <div class="footer-payment-badges">
+          <span class="payment-pill">VISA</span>
+          <span class="payment-pill">MASTERCARD</span>
+          <span class="payment-pill">AMEX</span>
+          <span class="payment-pill">APPLE PAY</span>
+          <span class="payment-pill">PAYPAL</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/shop.js"></script>
+</body>
+</html>
+
