@@ -23,13 +23,12 @@ const Store = {
     if (savedTheme) {
       this.setTheme(savedTheme, false);
     } else {
-      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-      this.setTheme(prefersDark ? "dark" : "light", false);
+      this.setTheme("dark", false);
     }
   },
 
   getTheme() {
-    return document.documentElement.getAttribute("data-theme") || "light";
+    return document.documentElement.getAttribute("data-theme") || "dark";
   },
 
   setTheme(theme, save = true) {
@@ -607,6 +606,7 @@ const Store = {
       btn.addEventListener("click", (e) => {
         e.preventDefault();
         overlay.classList.add("is-open");
+        document.querySelector(".mobile-drawer-backdrop")?.classList.remove("is-open");
         document.body.style.overflow = "hidden";
         const input = overlay.querySelector("#cs-search-input");
         setTimeout(() => input?.focus(), 100);

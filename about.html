@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Discover Cycle Sphere's cycling heritage, Toray carbon engineering philosophy, and mission to build world-class bicycles." />
+  <title>About Cycle Sphere &amp; Craft Philosophy | CYCLE SPHERE</title>
+
+  <!-- Google Fonts: Space Grotesk & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- Mandatory Sticky Header & Navbar -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Cycle Sphere Home">
+          <div class="brand-logo-mark">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18.5" cy="17.5" r="3.5" />
+              <circle cx="5.5" cy="17.5" r="3.5" />
+              <circle cx="15" cy="5" r="1" />
+              <path d="M12 17.5V14l-3-3 4-3 2 3h2" />
+            </svg>
+          </div>
+          <span>CYCLE<span class="accent">SPHERE</span></span>
+        </a>
+
+        <!-- Desktop Navigation Menu (Accessories & Collections removed as requested) -->
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+
+          <!-- Bikes Dropdown -->
+          <li class="nav-item">
+            <a href="shop.html" class="nav-link" aria-haspopup="true">
+              Bikes
+              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="shop.html" class="dropdown-link"><span>All Bikes</span></a>
+              <a href="shop.html?cat=road" class="dropdown-link">
+                <span>Road Bikes</span>
+                <span class="dropdown-link-badge">Aero</span>
+              </a>
+              <a href="shop.html?cat=mountain" class="dropdown-link">
+                <span>Mountain Bikes</span>
+                <span class="dropdown-link-badge">Enduro</span>
+              </a>
+              <a href="shop.html?cat=city" class="dropdown-link"><span>City Bikes</span></a>
+              <a href="shop.html?filter=bestseller" class="dropdown-link"><span>Best Sellers</span></a>
+              <a href="shop.html?filter=new" class="dropdown-link"><span>New Arrivals</span></a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="size-guide.html" class="nav-link">Size Guide</a>
+          </li>
+
+          <li class="nav-item is-active">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right-Side Action Controls (Login & Shop Bikes removed, retaining Sign Up) -->
+        <div class="header-actions">
+          <button type="button" class="header-action-btn open-search-trigger" aria-label="Open search dialog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </button>
+
+          <a href="shop.html?filter=wishlist" class="header-action-btn" aria-label="View saved bikes wishlist">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+            <span class="action-count-badge wishlist-count-badge" style="display: none;">0</span>
+          </a>
+
+          <a href="cart.html" class="header-action-btn" aria-label="View shopping cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+            <span class="action-count-badge cart-count-badge" style="display: none;">0</span>
+          </a>
+
+          <!-- Retaining Sign Up Button -->
+          <a href="signup.html" class="btn btn-primary btn-sm" style="margin-left: 0.25rem;">Sign Up</a>
+
+          <button type="button" class="hamburger-btn" aria-label="Open mobile navigation menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" aria-hidden="true">
+    <div class="mobile-drawer">
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-logo-mark">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <circle cx="18.5" cy="17.5" r="3.5" />
+              <circle cx="5.5" cy="17.5" r="3.5" />
+              <circle cx="15" cy="5" r="1" />
+              <path d="M12 17.5V14l-3-3 4-3 2 3h2" />
+            </svg>
+          </div>
+          <span>CYCLE<span class="accent">SPHERE</span></span>
+        </a>
+        <button type="button" class="cs-modal-close mobile-drawer-close" aria-label="Close menu">&times;</button>
+      </div>
+
+      <div class="mobile-drawer-body">
+        <!-- Actions from header placed inside menu page with exact navbar style -->
+        <div class="drawer-actions-bar">
+          <button type="button" class="header-action-btn open-search-trigger" aria-label="Open search dialog" title="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <a href="shop.html?filter=wishlist" class="header-action-btn" aria-label="View saved bikes wishlist" title="Wishlist">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <span class="action-count-badge wishlist-count-badge" style="display: none;">0</span>
+          </a>
+          <a href="cart.html" class="header-action-btn" aria-label="View shopping cart" title="Shopping Cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <span class="action-count-badge cart-count-badge" style="display: none;">0</span>
+          </a>
+        </div>
+
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+          <li>
+            <button type="button" class="mobile-nav-link mobile-accordion-toggle"
+              data-accordion-target="mob-about-bikes">
+              <span>Bicycles</span>
+              <svg class="nav-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="mobile-accordion-content" id="mob-about-bikes">
+              <a href="shop.html" class="mobile-sub-link">All Bikes</a>
+              <a href="shop.html?cat=road" class="mobile-sub-link">Road Bikes</a>
+              <a href="shop.html?cat=mountain" class="mobile-sub-link">Mountain Bikes</a>
+              <a href="shop.html?cat=city" class="mobile-sub-link">City Bikes</a>
+              <a href="shop.html?filter=bestseller" class="mobile-sub-link">Best Sellers</a>
+              <a href="shop.html?filter=new" class="mobile-sub-link">New Arrivals</a>
+            </div>
+          </li>
+          <li><a href="size-guide.html" class="mobile-nav-link">Size Guide</a></li>
+          <li><a href="about.html" class="mobile-nav-link">About Cycle Sphere</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">Contact &amp; Support</a></li>
+        </ul>
+      </div>
+
+      <div class="mobile-drawer-footer">
+        <a href="signup.html" class="btn btn-primary" style="width: 100%;">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="section-sm">
+    <div class="container">
+      <!-- Brand Mission Header -->
+      <div class="page-hero text-center" style="max-width: 840px; margin: 0 auto 4rem auto; text-align: center;">
+        <span class="section-tag">Brand Philosophy</span>
+        <h1 style="font-size: clamp(2.4rem, 4.5vw, 3.8rem); margin-bottom: 1rem; line-height: 1.1;">
+          Find Your Ride. <br />
+          <span class="text-accent-weight">Define Your Journey.</span>
+        </h1>
+        <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.7;">
+          Cycle Sphere was founded on a singular conviction: that a bicycle should never simply be an assembly of
+          generic parts, but a harmonized instrument of human freedom, mechanical precision, and outdoor exploration.
+        </p>
+      </div>
+
+      <!-- Story Split 1 -->
+      <div class="story-split-grid" style="margin-bottom: 5rem;">
+        <div>
+          <span class="section-tag">Our Atelier Story</span>
+          <h2 style="font-size: 2rem; margin-bottom: 1rem;">From Alpine Trails to Global Pelotons</h2>
+          <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
+            Born in 2018 in a specialized engineering workshop at the base of the Colorado Rockies, our team—composed of
+            former UCI road racers, composite aerospace engineers, and dedicated trail builders—set out to eradicate the
+            compromises pervasive in mass-market cycling retail.
+          </p>
+          <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+            We rejected third-party catalogue frames in favor of proprietary monocoque mold designs, laser-aligned frame
+            jigs, and rigorous dyno load testing. Every millimeter of our Toray carbon layup and hydroformed tubing is
+            tuned to absorb fatiguing high-frequency road vibrations while delivering direct, instantaneous forward
+            acceleration.
+          </p>
+          <a href="shop.html" class="btn btn-primary">Experience The Fleet &rarr;</a>
+        </div>
+        <div class="story-media">
+          <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=1200&q=80"
+            alt="Master bike technician tuning derailleur in clean workshop" />
+        </div>
+      </div>
+
+      <!-- Brand Mission & 4 Pillars -->
+      <div
+        style="background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 3.5rem 2.5rem; margin-bottom: 5rem;">
+        <div class="section-header text-center" style="margin-bottom: 3rem;">
+          <span class="section-tag">Core Tenets</span>
+          <h2 style="font-size: 2.2rem;">The Four Pillars of Cycle Sphere</h2>
+          <p style="font-size: 1rem; color: var(--text-secondary); max-width: 620px; margin: 0.5rem auto 0;">
+            The non-negotiable principles behind every road machine, trail conqueror, and urban commuter we calibrate.
+          </p>
+        </div>
+
+        <div class="pillars-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2.5rem;">
+          <div>
+            <div class="benefit-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">1. Unyielding Material Integrity</h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;">
+              We utilize only certified high-modulus Toray T800 and T1000 carbon fiber along with double-butted 6061-T6
+              alloy with full tensile batch traceability.
+            </p>
+          </div>
+
+          <div>
+            <div class="benefit-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+              </svg>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">2. 100% Pre-Assembly</h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;">
+              No bicycle arrives in a jumble of raw parts. Every gear indexed, brake caliper bled, and bolt torqued to
+              specification by our certified mechanics.
+            </p>
+          </div>
+
+          <div>
+            <div class="benefit-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">3. 30-Day Trail Confidence</h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;">
+              Real riding terrain is the only true fit test. If you are not completely satisfied by fit or feel within
+              30 days, return or exchange it hassle-free.
+            </p>
+          </div>
+
+          <div>
+            <div class="benefit-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">4. Lifelong Rider Concierge</h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;">
+              From remote geometry consultations to replacement component dispatch, our rider support network is
+              available throughout your journey.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Craftsmanship In Detail Banner -->
+      <section class="campaign-banner" style="margin-bottom: 4rem;">
+        <div class="campaign-content">
+          <span class="section-tag" style="color: var(--accent);">Engineering Precision</span>
+          <h2 class="campaign-title">Hand-Calibrated for Longevity &amp; Speed</h2>
+          <p class="campaign-desc">
+            We inspect spoke tension with digital gauges, bleed hydraulic lines with zero micro-bubbles, and test
+            wireless Di2 pairing prior to packing in our bespoke flight crates.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-accent btn-lg">Speak With a Technician &rarr;</a>
+            <a href="shop.html" class="btn btn-outline btn-lg"
+              style="color: #FFFFFF; border-color: rgba(255, 255, 255, 0.4);">Explore All Models</a>
+          </div>
+        </div>
+        <div class="campaign-media">
+          <img src="https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=1200&q=80"
+            alt="Gravel bicycle on mountain peak" />
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- MANDATORY 4-COLUMN FOOTER & NEWSLETTER -->
+  <footer class="site-footer">
+    <div class="footer-newsletter-strip">
+      <div class="container">
+        <div class="newsletter-box">
+          <div class="newsletter-content">
+            <h3 class="newsletter-title">Join The Peloton</h3>
+            <p class="newsletter-subtitle">
+              Receive route guides, early product drops, and exclusive invitations to Cycle Sphere group rides. Enjoy
+              10% off your first accessories order.
+            </p>
+          </div>
+          <form class="newsletter-form" aria-label="Newsletter Subscription">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address" required />
+            <button type="submit" class="btn btn-accent">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col-brand">
+            <a href="index.html" class="brand-logo" style="color: #FFFFFF;">
+              <div class="brand-logo-mark">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <circle cx="18.5" cy="17.5" r="3.5" />
+                  <circle cx="5.5" cy="17.5" r="3.5" />
+                  <circle cx="15" cy="5" r="1" />
+                  <path d="M12 17.5V14l-3-3 4-3 2 3h2" />
+                </svg>
+              </div>
+              <span>CYCLE<span class="accent">SPHERE</span></span>
+            </a>
+            <p>
+              “Find Your Ride. Define Your Journey.” Premium performance bicycles and cycling essentials engineered for
+              competitive athletes, adventurers, and everyday commuters.
+            </p>
+            <div class="footer-social-links">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+                aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+                aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                </svg>
+              </a>
+              <a href="https://strava.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+                aria-label="Strava">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7.008 13.827h4.172" />
+                </svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+                aria-label="Twitter">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Shop Fleet</h4>
+            <ul class="footer-links-list">
+              <li><a href="shop.html?cat=road">Road Bikes</a></li>
+              <li><a href="shop.html?cat=mountain">Mountain Bikes</a></li>
+              <li><a href="shop.html?cat=city">City Commuters</a></li>
+              <li><a href="shop.html?filter=bestseller">Best Sellers</a></li>
+              <li><a href="shop.html?filter=new">New Arrivals</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Customer Support</h4>
+            <ul class="footer-links-list">
+              <li><a href="contact.html">Contact Concierge</a></li>
+              <li><a href="contact.html#faq">Frequently Asked Questions</a></li>
+              <li><a href="contact.html">Shipping &amp; Delivery</a></li>
+              <li><a href="contact.html">30-Day Trail Returns</a></li>
+              <li><a href="contact.html">Lifetime Frame Warranty</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Information</h4>
+            <ul class="footer-links-list">
+              <li><a href="about.html">About Cycle Sphere</a></li>
+              <li><a href="size-guide.html">Bicycle Size &amp; Fit Guide</a></li>
+              <li><a href="about.html">Privacy Policy</a></li>
+              <li><a href="about.html">Terms &amp; Conditions</a></li>
+              <li><a href="404.html">404 Error Page Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>
+          &copy; 2026 CYCLE SPHERE. All Rights Reserved. Commercial E-Commerce HTML Template. Demo Product Data.
+        </div>
+        <div class="footer-payment-badges">
+          <span class="payment-pill">VISA</span>
+          <span class="payment-pill">MASTERCARD</span>
+          <span class="payment-pill">AMEX</span>
+          <span class="payment-pill">APPLE PAY</span>
+          <span class="payment-pill">PAYPAL</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

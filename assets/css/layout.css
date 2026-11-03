@@ -4,16 +4,10 @@
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   Announcement Topbar
+   Announcement Topbar (Hidden as requested: content above navbar removed)
    -------------------------------------------------------------------------- */
 .topbar {
-  background-color: var(--secondary);
-  color: #FFFFFF;
-  font-size: 0.82rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: none !important;
 }
 
 [data-theme="dark"] .topbar {
@@ -323,12 +317,17 @@
 .mobile-drawer-backdrop {
   position: fixed;
   inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
   background-color: rgba(10, 15, 12, 0.65);
   backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   z-index: 1050;
   opacity: 0;
   visibility: hidden;
-  transition: all var(--transition-normal);
+  transition: opacity var(--transition-normal), visibility var(--transition-normal);
+  overflow: hidden;
 }
 
 .mobile-drawer-backdrop.is-open {
@@ -340,8 +339,10 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: min(85vw, 360px);
+  width: 360px;
+  max-width: 100vw;
   height: 100vh;
+  height: 100dvh;
   background-color: var(--bg-surface);
   border-left: 1px solid var(--border-color);
   box-shadow: var(--shadow-xl);
@@ -351,6 +352,8 @@
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .mobile-drawer-backdrop.is-open .mobile-drawer {
@@ -363,6 +366,18 @@
   justify-content: space-between;
   padding: 1.25rem 1.5rem;
   border-bottom: 1px solid var(--border-color);
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.mobile-drawer-close {
+  position: static !important;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .mobile-drawer-body {
@@ -371,12 +386,20 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .mobile-nav-list {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  list-style: none;
 }
 
 .mobile-nav-link {
@@ -389,6 +412,9 @@
   font-weight: 600;
   color: var(--text-primary);
   border-radius: var(--radius-md);
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
 }
 
 .mobile-nav-link:hover {
@@ -398,6 +424,23 @@
 
 .mobile-accordion-toggle {
   width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-accordion-toggle .nav-chevron {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  flex-shrink: 0;
+  margin-left: auto;
+  transition: transform var(--transition-fast);
+}
+
+.mobile-accordion-toggle.is-open .nav-chevron {
+  transform: rotate(180deg);
 }
 
 .mobile-accordion-content {
@@ -406,6 +449,8 @@
   padding-left: 1rem;
   margin-top: 0.25rem;
   border-left: 2px solid var(--border-color);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .mobile-accordion-content.is-open {
@@ -428,6 +473,72 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Actions inside Menu Page (Exact same style as in navbar nicely without touching borders) */
+.drawer-actions-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 0.85rem 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-color);
+  margin-bottom: 0.75rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.drawer-actions-bar .header-action-btn {
+  display: inline-flex !important;
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  max-width: 44px !important;
+  flex: 0 0 44px !important;
+  border-radius: var(--radius-full) !important;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.drawer-actions-bar .header-action-btn:hover,
+.drawer-actions-bar .header-action-btn:active {
+  background-color: var(--primary-tint);
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.drawer-actions-bar .action-count-badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 18px;
+  height: 18px;
+  border-radius: var(--radius-full);
+  background-color: var(--accent);
+  color: var(--accent-text);
+  font-size: 0.68rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--bg-surface);
+}
+
+/* Breadcrumbs removed across all pages */
+.breadcrumbs {
+  display: none !important;
 }
 
 /* --------------------------------------------------------------------------

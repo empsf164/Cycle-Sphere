@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,21 +21,6 @@
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
-  <aside class="topbar" aria-label="Announcement">
-    <div class="container topbar-inner">
-      <div class="topbar-msg">
-        <span class="topbar-pill">Complimentary Freight</span>
-        <span>Free white-glove boxed delivery on all complete bicycles worldwide.</span>
-      </div>
-      <div class="topbar-links">
-        <a href="size-guide.html">Interactive Size Calculator</a>
-        <a href="about-contact.html#faq">Rider Support & FAQs</a>
-        <a href="about-contact.html#contact">Live Concierge</a>
-      </div>
-    </div>
-  </aside>
-
   <!-- Mandatory Sticky Header & Navbar -->
   <header class="site-header" id="site-header">
     <div class="container">
@@ -55,7 +40,7 @@
 
         <!-- Desktop Navigation Menu -->
         <ul class="nav-menu">
-          <li class="nav-item">
+          <li class="nav-item is-active">
             <a href="index.html" class="nav-link">Home</a>
           </li>
 
@@ -89,37 +74,16 @@
             </div>
           </li>
 
-          <!-- Accessories Dropdown -->
-          <li class="nav-item">
-            <a href="shop.html?cat=accessories" class="nav-link" aria-haspopup="true">
-              Accessories
-              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-            </a>
-            <div class="dropdown-menu">
-              <a href="shop.html?cat=accessories&sub=helmets" class="dropdown-link">Helmets</a>
-              <a href="shop.html?cat=accessories&sub=apparel" class="dropdown-link">Cycling Apparel</a>
-              <a href="shop.html?cat=accessories&sub=lights" class="dropdown-link">Lights & Safety</a>
-              <a href="shop.html?cat=accessories&sub=locks" class="dropdown-link">Locks & Security</a>
-              <a href="shop.html?cat=accessories&sub=tools" class="dropdown-link">Pumps & Tools</a>
-              <a href="shop.html?cat=accessories&sub=hydration" class="dropdown-link">Bottles & Hydration</a>
-              <a href="shop.html?cat=accessories" class="dropdown-link">All Accessories</a>
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a href="shop.html?filter=collections" class="nav-link">Collections</a>
-          </li>
-
           <li class="nav-item">
             <a href="size-guide.html" class="nav-link">Size Guide</a>
           </li>
 
           <li class="nav-item">
-            <a href="about-contact.html#about" class="nav-link">About</a>
+            <a href="about.html" class="nav-link">About</a>
           </li>
 
           <li class="nav-item">
-            <a href="about-contact.html#contact" class="nav-link">Contact</a>
+            <a href="contact.html" class="nav-link">Contact</a>
           </li>
         </ul>
 
@@ -142,19 +106,8 @@
             <span class="action-count-badge cart-count-badge" style="display: none;">0</span>
           </a>
 
-          <!-- Theme Toggle Button -->
-          <button type="button" class="header-action-btn theme-toggle-btn" aria-label="Toggle light and dark mode">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          </button>
-
-          <!-- Auth Links -->
-          <div class="header-auth-links">
-            <a href="login.html" class="header-auth-link">Login</a>
-            <a href="signup.html" class="header-auth-link">Sign Up</a>
-          </div>
-
-          <!-- Primary CTA -->
-          <a href="shop.html" class="btn btn-primary header-cta-btn">Shop Bikes</a>
+          <!-- Retaining Sign Up Button -->
+          <a href="signup.html" class="btn btn-primary btn-sm" style="margin-left: 0.25rem;">Sign Up</a>
 
           <!-- Mobile Hamburger Toggle -->
           <button type="button" class="hamburger-btn" aria-label="Open mobile navigation menu">
@@ -179,6 +132,21 @@
       </div>
 
       <div class="mobile-drawer-body">
+        <!-- Actions from header placed inside menu page with exact navbar style -->
+        <div class="drawer-actions-bar">
+          <button type="button" class="header-action-btn open-search-trigger" aria-label="Open search dialog" title="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <a href="shop.html?filter=wishlist" class="header-action-btn" aria-label="View saved bikes wishlist" title="Wishlist">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <span class="action-count-badge wishlist-count-badge" style="display: none;">0</span>
+          </a>
+          <a href="cart.html" class="header-action-btn" aria-label="View shopping cart" title="Shopping Cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <span class="action-count-badge cart-count-badge" style="display: none;">0</span>
+          </a>
+        </div>
+
         <ul class="mobile-nav-list">
           <li><a href="index.html" class="mobile-nav-link">Home</a></li>
 
@@ -198,36 +166,14 @@
             </div>
           </li>
 
-          <!-- Mobile Accessories Accordion -->
-          <li>
-            <button type="button" class="mobile-nav-link mobile-accordion-toggle" data-accordion-target="mob-accessories">
-              <span>Accessories</span>
-              <svg class="nav-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="mobile-accordion-content" id="mob-accessories">
-              <a href="shop.html?cat=accessories&sub=helmets" class="mobile-sub-link">Helmets</a>
-              <a href="shop.html?cat=accessories&sub=apparel" class="mobile-sub-link">Cycling Apparel</a>
-              <a href="shop.html?cat=accessories&sub=lights" class="mobile-sub-link">Lights & Safety</a>
-              <a href="shop.html?cat=accessories&sub=locks" class="mobile-sub-link">Locks & Security</a>
-              <a href="shop.html?cat=accessories&sub=tools" class="mobile-sub-link">Pumps & Tools</a>
-              <a href="shop.html?cat=accessories&sub=hydration" class="mobile-sub-link">Bottles & Hydration</a>
-              <a href="shop.html?cat=accessories" class="mobile-sub-link">All Accessories</a>
-            </div>
-          </li>
-
-          <li><a href="shop.html?filter=collections" class="mobile-nav-link">Collections</a></li>
           <li><a href="size-guide.html" class="mobile-nav-link">Size Guide</a></li>
-          <li><a href="about-contact.html#about" class="mobile-nav-link">About Cycle Sphere</a></li>
-          <li><a href="about-contact.html#contact" class="mobile-nav-link">Contact & Support</a></li>
+          <li><a href="about.html" class="mobile-nav-link">About Cycle Sphere</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">Contact &amp; Support</a></li>
         </ul>
       </div>
 
       <div class="mobile-drawer-footer">
-        <a href="shop.html" class="btn btn-primary" style="width: 100%;">Shop Bikes</a>
-        <div style="display: flex; gap: 0.5rem;">
-          <a href="login.html" class="btn btn-outline" style="flex: 1;">Login</a>
-          <a href="signup.html" class="btn btn-secondary" style="flex: 1;">Sign Up</a>
-        </div>
+        <a href="signup.html" class="btn btn-primary" style="width: 100%;">Sign Up</a>
       </div>
     </div>
   </div>
@@ -406,7 +352,7 @@
               </div>
             </div>
 
-            <a href="about-contact.html#about" class="btn btn-accent btn-lg">Discover Our Story &rarr;</a>
+            <a href="about.html" class="btn btn-accent btn-lg">Discover Our Story &rarr;</a>
           </div>
 
           <div class="campaign-media">
@@ -648,11 +594,11 @@
           <div>
             <h4 class="footer-col-title">Customer Support</h4>
             <ul class="footer-links-list">
-              <li><a href="about-contact.html#contact">Contact Concierge</a></li>
-              <li><a href="about-contact.html#faq">Frequently Asked Questions</a></li>
-              <li><a href="about-contact.html#shipping">Shipping &amp; Boxed Delivery</a></li>
-              <li><a href="about-contact.html#returns">30-Day Trail Returns</a></li>
-              <li><a href="about-contact.html#warranty">Lifetime Frame Warranty</a></li>
+              <li><a href="contact.html">Contact Concierge</a></li>
+              <li><a href="contact.html#faq">Frequently Asked Questions</a></li>
+              <li><a href="contact.html">Shipping &amp; Boxed Delivery</a></li>
+              <li><a href="contact.html">30-Day Trail Returns</a></li>
+              <li><a href="contact.html">Lifetime Frame Warranty</a></li>
             </ul>
           </div>
 
@@ -660,10 +606,10 @@
           <div>
             <h4 class="footer-col-title">Information</h4>
             <ul class="footer-links-list">
-              <li><a href="about-contact.html#about">About Cycle Sphere</a></li>
+              <li><a href="about.html">About Cycle Sphere</a></li>
               <li><a href="size-guide.html">Bicycle Size &amp; Fit Guide</a></li>
-              <li><a href="about-contact.html#privacy">Privacy Policy</a></li>
-              <li><a href="about-contact.html#terms">Terms &amp; Conditions</a></li>
+              <li><a href="about.html">Privacy Policy</a></li>
+              <li><a href="about.html">Terms &amp; Conditions</a></li>
               <li><a href="404.html">404 Error Page Demo</a></li>
             </ul>
           </div>
